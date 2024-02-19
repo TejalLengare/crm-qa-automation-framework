@@ -18,9 +18,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import com.crm.qa.Utils.Constant;
-import com.crm.qa.Utils.Constants;
 public class BaseTest {
 	public ExtentSparkReporter sparkreporter;
 	public ExtentReports extent;
