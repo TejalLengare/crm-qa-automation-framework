@@ -17,10 +17,10 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.crm.qa.Utils.Constants;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import com.crm.qa.Utils.Constant;
+import com.crm.qa.Utils.Constants;
 public class BaseTest {
 	public ExtentSparkReporter sparkreporter;
 	public ExtentReports extent;
@@ -58,7 +58,7 @@ public class BaseTest {
 		//Maximizing Browser Window
 		driver.manage().window().maximize();
 		//Navigating to URL
-		driver.get(Constants.url);
+		driver.get(Constant.url);
 		//Implicit Wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//Thread Sleep
@@ -101,7 +101,6 @@ public class BaseTest {
 		}
 		driver.quit();
 	}
-
 	@AfterTest
 	public void aftertestmethod() {
 	//for flushing and finalizing the Extent Report.
